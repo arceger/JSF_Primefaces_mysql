@@ -17,6 +17,12 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.15</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
 			<groupId>org.jboss.weld.servlet</groupId>
 			<artifactId>weld-servlet</artifactId>
 			<version>2.4.0.Final</version>
@@ -46,7 +52,7 @@
          <dependency>
            <groupId>javax.xml.bind</groupId>
            <artifactId>jaxb-api</artifactId>
-           <version>2.3.1</version> <!-- Use a versão mais recente disponível -->
+           <version>2.3.1</version>
         </dependency>
 
 		<dependency>
@@ -85,7 +91,7 @@
 			  <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-war-plugin</artifactId>
-            <version>3.3.0</version> <!-- Use a versão mais recente disponível -->
+            <version>3.3.0</version>
             <configuration>
                 <warSourceDirectory>src/main/webapp</warSourceDirectory>
                 <failOnMissingWebXml>false</failOnMissingWebXml>

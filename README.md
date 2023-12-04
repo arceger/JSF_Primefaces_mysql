@@ -5,6 +5,8 @@
 - java 11 
 - mysql 8.0
 - Podman
+- TomCat
+- PrimeFaces
 
 
 #### Se tudo foi carregano normalmente a pagina devera exibir
@@ -15,7 +17,7 @@
 
 #### segue abaixo os comando pra criacao do docker
 
-#### eu prefiro o podman
+#### usei o podman
 
 ##### podman build -t mysql .
 ##### podman run -p 3306:3306 --name mysql --rm mysql

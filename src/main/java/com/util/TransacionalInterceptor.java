@@ -27,13 +27,8 @@ public class TransacionalInterceptor implements Serializable {
 
         try {
             if (!trx.isActive()) {
-                // truque para fazer rollback no que já passou
-                // (senão, um futuro commit confirmaria até mesmo operações sem
-                // transação)
                 trx.begin();
                 trx.rollback();
-
-                // agora sim inicia a transação
                 trx.begin();
 
                 criador = true;
